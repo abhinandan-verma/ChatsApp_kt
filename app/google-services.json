@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "728598133657",
+    "firebase_url": "https://chatsapp-3249a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chatsapp-3249a",
+    "storage_bucket": "chatsapp-3249a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728598133657:android:82a067f229789ea07d7108",
+        "android_client_info": {
+          "package_name": "com.abhicoding.chatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkefPYfMqfqWTcwnndZzzo_5GFS9jJSZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728598133657:android:da0fbc8eefecf9277d7108",
+        "android_client_info": {
+          "package_name": "com.example.chatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkefPYfMqfqWTcwnndZzzo_5GFS9jJSZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
