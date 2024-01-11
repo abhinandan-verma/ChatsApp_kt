@@ -1,39 +1,12 @@
-package com.abhicoding.chatsapp.auth
+package com.abhicoding.chatsapp.phoneauth
 
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.abhicoding.chatsapp.auth
 import com.abhicoding.chatsapp.getActivity
-import com.abhicoding.chatsapp.storedVerificationId
+import com.abhicoding.chatsapp.signin.auth
+import com.abhicoding.chatsapp.signin.storedVerificationId
 import com.google.firebase.FirebaseException
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
@@ -86,7 +59,7 @@ fun onLoginClicked(context: Context, phoneNumber: String, onCodeSent: () -> Unit
     }
 }
 
-private fun signInWithPhoneAuthCredential(context: Context, credential: PhoneAuthCredential) {
+private fun signInWithPhoneAuthCredential( context: Context, credential: PhoneAuthCredential) {
     context.getActivity()?.let {
         auth.signInWithCredential(credential)
             .addOnCompleteListener { task ->

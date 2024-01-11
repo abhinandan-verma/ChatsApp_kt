@@ -13,14 +13,18 @@
         android:theme="@style/Theme.ChatsApp"
         tools:targetApi="31">
         <activity
-            android:name=".auth.LoginActivity"
+            android:name=".ChatActivity"
             android:exported="false"
-            android:label="@string/title_activity_login"
+            android:label="@string/title_activity_chat"
             android:theme="@style/Theme.ChatsApp" />
         <activity
-            android:name=".MainActivity"
+            android:name=".signup.SignUpActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.ChatsApp"></activity>
+        <activity
+            android:name=".signin.MainActivity"
+            android:exported="true"
             android:theme="@style/Theme.ChatsApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
