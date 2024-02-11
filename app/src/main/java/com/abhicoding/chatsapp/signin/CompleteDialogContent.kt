@@ -96,7 +96,7 @@ fun CompleteDialogContent() {
                     signInWithEmail(email, password, context)
                 },
                 colors = ButtonDefaults.textButtonColors(
-                    Color.Green
+                    Color.Cyan
                 ),
                 modifier = Modifier
                     .fillMaxWidth(1f)
@@ -104,7 +104,7 @@ fun CompleteDialogContent() {
             ) {
                 Text(
                     text = "Login ",
-                    color = Color.Black
+                    color = Color.Blue
                 )
             }
 
@@ -114,7 +114,7 @@ fun CompleteDialogContent() {
                     context.startActivity(intent)
                 },
                 colors = ButtonDefaults.textButtonColors(
-                    Color.Green
+                    Color.Magenta
                 ),
                 modifier = Modifier
                     .fillMaxWidth(1f)
@@ -122,7 +122,8 @@ fun CompleteDialogContent() {
             ) {
                 Text(
                     text = "Create Account",
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
                 )
             }
         }
@@ -180,7 +181,7 @@ fun CompleteDialogContent() {
                             isOtpVisible = true
                         }
                     }, colors = ButtonDefaults.textButtonColors(
-                        Color.Cyan
+                        Color.Green
                     ),
                     modifier = Modifier
                         .fillMaxWidth(1f)

@@ -13,6 +13,11 @@
         android:theme="@style/Theme.ChatsApp"
         tools:targetApi="31">
         <activity
+            android:name=".message.ChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/Theme.ChatsApp" />
+        <activity
             android:name=".ChatActivity"
             android:exported="false"
             android:label="@string/title_activity_chat"
@@ -21,7 +26,7 @@
             android:name=".signup.SignUpActivity"
             android:exported="true"
             android:label="@string/title_activity_sign_up"
-            android:theme="@style/Theme.ChatsApp"></activity>
+            android:theme="@style/Theme.ChatsApp" />
         <activity
             android:name=".signin.MainActivity"
             android:exported="true"

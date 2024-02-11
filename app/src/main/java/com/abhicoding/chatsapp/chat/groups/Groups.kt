@@ -12,17 +12,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
 
-@Preview
 @Composable
 fun Groups() {
     val context = LocalContext.current
     val viewModel = GroupViewModel(context)
     val openDialog = remember { mutableStateOf(false) }
     var name by remember { mutableStateOf("") }
-
-
 
     SetData(viewModel, openDialog)
 

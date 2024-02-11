@@ -32,8 +32,8 @@ class GroupViewModel(context: Context){
                         group?.let { groupList.add(it) }
                     }
                     response.value = DataState.Success(groupList)
-                    Toast.makeText(context,"Retrieved Data Successfully", Toast.LENGTH_SHORT).show()
-                    Log.d("msg","Retrieved Data Successfully")
+                    Toast.makeText(context,"Retrieved Groups Successfully", Toast.LENGTH_SHORT).show()
+                    Log.d("msg","Retrieved Groups Successfully")
                 }
 
                 override fun onCancelled(error: DatabaseError) {

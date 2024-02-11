@@ -66,7 +66,8 @@ fun CompleteSignUpContent() {
             .height(400.dp)
             .fillMaxWidth(1f)
             .wrapContentHeight(),
-        shape = RoundedCornerShape(20.dp)
+        shape = RoundedCornerShape(20.dp),
+        
     ) {
         Column(
             modifier = Modifier
@@ -74,7 +75,7 @@ fun CompleteSignUpContent() {
                 .fillMaxWidth(1f)
                 .wrapContentHeight(),
             verticalArrangement = Arrangement.SpaceBetween,
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
                 text = "Sign Up Here",
@@ -105,7 +106,7 @@ fun CompleteSignUpContent() {
                     signUpUser(name, email, password, context)
                 },
                 colors = ButtonDefaults.textButtonColors(
-                    Color.Green
+                    Color.Cyan
                 ),
                 modifier = Modifier
                     .fillMaxWidth(1f)
